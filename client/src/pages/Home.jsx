@@ -1,10 +1,14 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import Hero from "../components/Hero.jsx";
+import AiTools from "../components/AiTools.jsx";
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the main landing page of the application.</p>
-    </div>
+  <>
+      <Navbar/>
+      <Hero/>
+      <AiTools/>
+  </>
   );
 }
 
