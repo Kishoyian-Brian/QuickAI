@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
 const RemoveBackground = () => {
-    return (
-        <div>
-            <h1>Remove Background Page</h1>
-        </div>
-    );
-};
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-export default RemoveBackground;
+export default RemoveBackground
