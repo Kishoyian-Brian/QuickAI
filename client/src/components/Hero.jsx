@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
 
             <div className="flex items-center gap-4 mt-8 mx-auto text-gray-600">
-                <img src={assets.user_group} alt="user" className='h-8'/>Trusted by over 1000+ users
+                <img src={assets.user_group} alt="user" className='h-8'/>Trusted by over 10k+ users
             </div>
 
         </div>
