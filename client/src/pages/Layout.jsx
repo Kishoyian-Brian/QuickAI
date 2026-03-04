@@ -16,7 +16,7 @@ const Layout = () => {
         <div className='flex flex-col items-start justify-start h-screen'>
             
             <nav>
-                <img src={assets.logo} alt="" onClick={()=>navigate('/')}/>
+                <img className="cursor-pointer" src={assets.logo} alt="" onClick={()=>navigate('/')}/>
                 {
                     sidebarOpen ? <X onClick={()=> setSidebarOpen(false)} className="cursor-pointer w-6 h-6 text-gray-600 sm:hidden" /> 
                     : <Menu onClick={()=> setSidebarOpen(true)} className="cursor-pointer w-6 h-6 text-gray-600 sm:hidden" />
