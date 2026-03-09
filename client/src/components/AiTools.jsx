@@ -1,11 +1,12 @@
 import React from 'react';
 import { AiToolsData } from "../assets/assets.js";
 import { useNavigate } from "react-router-dom";
-import { useUser } from "@clerk/clerk-react";
+import { useUser, useClerk } from "@clerk/clerk-react";
 
 const AiTools = () => {
     const navigate = useNavigate();
     const { user } = useUser();
+    const {openSignIn} = useClerk;
 
     return (
         <div className="px-4 sm:px-20 xl:px-32 my-24">
@@ -28,7 +29,7 @@ const AiTools = () => {
             transition-all duration-300 cursor-pointer"
                         onClick={() => {
                             if (user) navigate(tool.path);
-                            else navigate("/sign-in");
+                            else navigate('/ai'); openSignIn();
                         }}
                     >
                         <tool.Icon
